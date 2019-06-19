@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/djordjijem/djordjijem.github.io#readme",
   "dependencies": {
+    "bulma": "^0.7.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
