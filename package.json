@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel index.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./public/index.html",
     "predeploy": "rm -rf dist && parcel build index.html",
     "deploy": "gh-pages -d dist"
   },
@@ -22,9 +21,11 @@
   "dependencies": {
     "bulma": "^0.7.5",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-jss": "^8.6.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "prettier": "1.18.2"
   }
 }

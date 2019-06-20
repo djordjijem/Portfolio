@@ -1,0 +1,11 @@
+.navbar {
+  border: 1px solid green;
+  position: fixed;
+  height: 100vh;
+}
+.navbar__list {
+  margin: auto;
+}
+.navbar__list-el {
+  padding: 0.5em;
+}
