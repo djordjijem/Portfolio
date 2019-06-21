@@ -1,0 +1,21 @@
+@media (max-width: 741px) {
+  .main-wrapper {
+    transition: margin-left 0.5s;
+  }
+}
+
+@media (min-width: 812px) and (max-width: 860px) {
+  .main-wrapper {
+    margin-left: 80px;
+  }
+}
+@media (min-width: 861px) and (max-width: 992px) {
+  .main-wrapper {
+    margin-left: 90px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .main-wrapper {
+    margin-left: 60px;
+  }
+}

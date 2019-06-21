@@ -1,7 +1,7 @@
 import React from 'react';
-import './Navbar.css';
+import './Aside.css';
 
-function Navbar() {
+function Aside() {
   const pages = [
     'Home',
     'About',
@@ -14,11 +14,11 @@ function Navbar() {
   ];
 
   return (
-    <nav className='column is-one-fifth navbar'>
+    <aside className='aside'>
       {/*******   img   *******/}
       <div className='columns'>
         <div className='column'>
-          <figure className='image is-128x128'>
+          <figure className='image is-128x128 aside__img'>
             <img
               className='is-rounded'
               src='https://bulma.io/images/placeholders/128x128.png'
@@ -39,22 +39,22 @@ function Navbar() {
       </div>
       <div className='columns'>
         <div className='column'>
-          <ul className='navbar__list'>
+          <ul className='aside__list'>
             {pages.map((page, i) => (
-              <li key={i} className='navbar__list-el'>
+              <li key={i} className='aside__list-el'>
                 <a>{page}</a>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className='columns'>
+      <div className='columns aside__footer'>
         <div className='column'>
           <p>©djordjijem ©2019</p>
         </div>
       </div>
-    </nav>
+    </aside>
   );
 }
 
-export { Navbar };
+export { Aside };

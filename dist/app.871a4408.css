@@ -10601,16 +10601,53 @@ label.panel-block:hover {
   width: 70%;
 }
 
-.navbar {
-  border: 1px solid green;
+.aside {
   position: fixed;
-  height: 100vh;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+  text-align: center;
+  transition: 0.5s;
 }
-.navbar__list {
-  margin: auto;
+.aside__img {
+  margin: 70px auto;
+  margin-bottom: 20px;
 }
-.navbar__list-el {
-  padding: 0.5em;
+.aside__list-el {
+  margin: 0.6em;
+}
+.aside__footer {
+  margin-top: 30px;
+}
+@media (max-width: 741px) {
+  .aside {
+    display: none;
+  }
+}
+
+@media (max-width: 741px) {
+  .main-wrapper {
+    transition: margin-left 0.5s;
+  }
+}
+
+@media (min-width: 812px) and (max-width: 860px) {
+  .main-wrapper {
+    margin-left: 80px;
+  }
+}
+@media (min-width: 861px) and (max-width: 992px) {
+  .main-wrapper {
+    margin-left: 90px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .main-wrapper {
+    margin-left: 60px;
+  }
 }
 
 

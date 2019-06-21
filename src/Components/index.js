@@ -1,2 +1,2 @@
-export { Navbar } from './Navbar';
+export { Aside } from './Aside';
 export { Main } from './Main';

@@ -1,0 +1,26 @@
+.aside {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+  text-align: center;
+  transition: 0.5s;
+}
+.aside__img {
+  margin: 70px auto;
+  margin-bottom: 20px;
+}
+.aside__list-el {
+  margin: 0.6em;
+}
+.aside__footer {
+  margin-top: 30px;
+}
+@media (max-width: 741px) {
+  .aside {
+    display: none;
+  }
+}
