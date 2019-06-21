@@ -10597,10 +10597,6 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
-.main {
-  width: 70%;
-}
-
 .aside {
   position: fixed;
   height: 100%;
@@ -10612,6 +10608,22 @@ label.panel-block:hover {
   text-align: center;
   transition: 0.5s;
 }
+.aside-wrapper {
+  position: relative;
+}
+.aside__close {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  color: white;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+@media (min-width: 756px) {
+  .aside__close {
+    display: none;
+  }
+}
 .aside__img {
   margin: 70px auto;
   margin-bottom: 20px;
@@ -10622,29 +10634,33 @@ label.panel-block:hover {
 .aside__footer {
   margin-top: 30px;
 }
-@media (max-width: 741px) {
+@media (max-width: 756px) {
   .aside {
     display: none;
   }
 }
 
-@media (max-width: 741px) {
-  .main-wrapper {
-    transition: margin-left 0.5s;
+.main-wrapper {
+  padding: 25px;
+}
+.main__hamburger {
+  font-size: 1.5em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  cursor: pointer;
+}
+@media (min-width: 757px) {
+  .main__hamburger {
+    display: none;
   }
 }
-
-@media (min-width: 812px) and (max-width: 860px) {
-  .main-wrapper {
-    margin-left: 80px;
-  }
-}
-@media (min-width: 861px) and (max-width: 992px) {
+@media (min-width: 758px) and (max-width: 992px) {
   .main-wrapper {
     margin-left: 90px;
   }
 }
-@media (min-width: 1000px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1250px) {
   .main-wrapper {
     margin-left: 60px;
   }

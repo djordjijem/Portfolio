@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaAlignJustify } from 'react-icons/fa';
-import './main.css';
+import './Main.css';
+
 function Main() {
-  function open() {
-    return 12;
+  const [open, setOpen] = useState(false);
+
+  function openAside() {
+    const aside = document.querySelector('.aside');
+    aside.style.display = 'block';
   }
 
   return (
     <main>
       <div className='main-wrapper'>
-        <FaAlignJustify className='main__hamburger' onClick={open} />
+        <FaAlignJustify className='main__hamburger' onClick={openAside} />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iusto
           dolore ducimus cumque quasi quo blanditiis ipsa odio maxime

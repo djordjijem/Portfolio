@@ -1,20 +1,24 @@
-@media (max-width: 741px) {
-  .main-wrapper {
-    transition: margin-left 0.5s;
+.main-wrapper {
+  padding: 25px;
+}
+.main__hamburger {
+  font-size: 1.5em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  cursor: pointer;
+}
+@media (min-width: 757px) {
+  .main__hamburger {
+    display: none;
   }
 }
-
-@media (min-width: 812px) and (max-width: 860px) {
-  .main-wrapper {
-    margin-left: 80px;
-  }
-}
-@media (min-width: 861px) and (max-width: 992px) {
+@media (min-width: 758px) and (max-width: 992px) {
   .main-wrapper {
     margin-left: 90px;
   }
 }
-@media (min-width: 1000px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1250px) {
   .main-wrapper {
     margin-left: 60px;
   }
