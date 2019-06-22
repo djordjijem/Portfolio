@@ -10597,13 +10597,49 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+.section {
+  margin: -38px -30px 0 -60px;
+}
+@media (max-width: 756px) {
+  .section {
+    margin-top: 0;
+  }
+}
+.theme-bg {
+  background: #8bddd1;
+}
+.theme-color {
+  color: #8bddd1;
+}
+.theme2-bg {
+  background-color: rgb(43, 44, 44);
+}
+.theme2-color {
+  color: rgb(43, 44, 44);
+}
+.article {
+  margin-top: 50px;
+  padding: 30px;
+}
+@media (max-width: 700px) {
+  .article {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1522px) {
+  .article {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+}
+
 .aside {
   position: fixed;
   height: 100%;
   width: 300px;
   position: fixed;
   z-index: 1;
-  background-color: #111;
   overflow-x: hidden;
   text-align: center;
   transition: 0.5s;
@@ -10640,9 +10676,6 @@ label.panel-block:hover {
   }
 }
 
-.main-wrapper {
-  padding: 25px;
-}
 .main__hamburger {
   font-size: 1.5em;
   position: absolute;
@@ -10664,6 +10697,19 @@ label.panel-block:hover {
   .main-wrapper {
     margin-left: 60px;
   }
+}
+.hero {
+  background-image: url('/despaired-2261021_1280.77fae219.jpg');
+  background-repeat: no-repeat, repeat;
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.hero_title {
+  margin: auto;
+  color: rgb(8, 8, 8);
 }
 
 

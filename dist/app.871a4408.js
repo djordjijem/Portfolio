@@ -43808,7 +43808,7 @@ function Aside() {
       windowSize.windowWidth > 768 ? asideClose()('block') : asideClose()('none');
     }
   }), _react.default.createElement("aside", {
-    className: "aside"
+    className: "aside theme2-bg"
   }, _react.default.createElement("div", {
     className: "aside-wrapper"
   }, _react.default.createElement(_md.MdClose, {
@@ -43828,13 +43828,13 @@ function Aside() {
   }, _react.default.createElement("div", {
     className: "column"
   }, _react.default.createElement("h4", {
-    className: "title is-4"
+    className: "title is-4 theme-color"
   }, "George Matic"))), _react.default.createElement("div", {
     className: "columns"
   }, _react.default.createElement("div", {
-    className: "column content"
+    className: "column"
   }, _react.default.createElement("h4", {
-    className: "title is-6"
+    className: "title is-6 theme-color"
   }, "Javascript Dev"))), _react.default.createElement("div", {
     className: "columns"
   }, _react.default.createElement("div", {
@@ -43850,7 +43850,9 @@ function Aside() {
     className: "columns aside__footer"
   }, _react.default.createElement("div", {
     className: "column"
-  }, _react.default.createElement("p", null, "\xA9djordjijem \xA92019"))))));
+  }, _react.default.createElement("p", {
+    className: "theme-color"
+  }, "\xA9djordjijem \xA92019"))))));
 }
 },{"react":"../node_modules/react/index.js","./Aside.css":"../src/Components/Aside.css","react-icons/md":"../node_modules/react-icons/md/index.esm.js","react-window-size-listener":"../node_modules/react-window-size-listener/lib/index.js"}],"../node_modules/react-icons/fa/index.esm.js":[function(require,module,exports) {
 "use strict";
@@ -71188,7 +71190,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/Components/Main.js":[function(require,module,exports) {
+},{"./../assets/img/despaired-2261021_1280.jpg":[["despaired-2261021_1280.77fae219.jpg","../src/assets/img/despaired-2261021_1280.jpg"],"../src/assets/img/despaired-2261021_1280.jpg"],"_css_loader":"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/Components/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -71228,7 +71230,39 @@ function Main() {
   }, _react.default.createElement(_fa.FaAlignJustify, {
     className: "main__hamburger",
     onClick: openAside
-  }), _react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iusto dolore ducimus cumque quasi quo blanditiis ipsa odio maxime asperiores, laborum obcaecati animi tempora nesciunt? Sunt illo ratione quae alias!")));
+  }), _react.default.createElement("div", {
+    className: "columns"
+  }, _react.default.createElement("div", {
+    className: "column"
+  }, _react.default.createElement("section", {
+    className: "hero"
+  }, _react.default.createElement("h1", {
+    className: "hero_title"
+  }, "Hi, ", _react.default.createElement("br", null), " i'm George!")), _react.default.createElement("article", {
+    className: "article about"
+  }, _react.default.createElement("h1", {
+    className: "title"
+  }, "About"), "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa ad nemo earum accusantium expedita sequi assumenda! In cupiditate iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto architecto amet suscipit esse itaque est ea minus molestias, temporibus alias? Tempora ab eum provident obcaecati atque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dicta esse laborum repellat atque veritatis tempore ipsa quos dolores incidunt culpa ab repellendus tenetur ipsum quas ullam eveniet quibusdam labore!"), _react.default.createElement("article", {
+    className: "article about"
+  }, _react.default.createElement("h1", {
+    className: "title"
+  }, "Skills"), "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa ad nemo earum accusantium expedita sequi assumenda! In cupiditate iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto architecto amet suscipit esse itaque est ea minus molestias, temporibus alias? Tempora ab eum provident obcaecati atque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dicta esse laborum repellat atque veritatis tempore ipsa quos dolores incidunt culpa ab repellendus tenetur ipsum quas ullam eveniet quibusdam labore!"), _react.default.createElement("article", {
+    className: "article about"
+  }, _react.default.createElement("h1", {
+    className: "title"
+  }, "Education"), "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa ad nemo earum accusantium expedita sequi assumenda! In cupiditate iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto architecto amet suscipit esse itaque est ea minus molestias, temporibus alias? Tempora ab eum provident obcaecati atque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dicta esse laborum repellat atque veritatis tempore ipsa quos dolores incidunt culpa ab repellendus tenetur ipsum quas ullam eveniet quibusdam labore!"), _react.default.createElement("article", {
+    className: "article about"
+  }, _react.default.createElement("h1", {
+    className: "title"
+  }, "Experience"), "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa ad nemo earum accusantium expedita sequi assumenda! In cupiditate iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto architecto amet suscipit esse itaque est ea minus molestias, temporibus alias? Tempora ab eum provident obcaecati atque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dicta esse laborum repellat atque veritatis tempore ipsa quos dolores incidunt culpa ab repellendus tenetur ipsum quas ullam eveniet quibusdam labore!"), _react.default.createElement("article", {
+    className: "article about"
+  }, _react.default.createElement("h1", {
+    className: "title"
+  }, "Work"), "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa ad nemo earum accusantium expedita sequi assumenda! In cupiditate iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto architecto amet suscipit esse itaque est ea minus molestias, temporibus alias? Tempora ab eum provident obcaecati atque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dicta esse laborum repellat atque veritatis tempore ipsa quos dolores incidunt culpa ab repellendus tenetur ipsum quas ullam eveniet quibusdam labore!"), _react.default.createElement("article", {
+    className: "article about"
+  }, _react.default.createElement("h1", {
+    className: "title"
+  }, "Blog"), "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa ad nemo earum accusantium expedita sequi assumenda! In cupiditate iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto architecto amet suscipit esse itaque est ea minus molestias, temporibus alias? Tempora ab eum provident obcaecati atque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dicta esse laborum repellat atque veritatis tempore ipsa quos dolores incidunt culpa ab repellendus tenetur ipsum quas ullam eveniet quibusdam labore!")))));
 }
 },{"react":"../node_modules/react/index.js","react-icons/fa":"../node_modules/react-icons/fa/index.esm.js","./Main.css":"../src/Components/Main.css"}],"../src/Components/index.js":[function(require,module,exports) {
 "use strict";
@@ -71274,8 +71308,10 @@ function App() {
     className: "columns"
   }, _react.default.createElement("div", {
     className: "column is-one-quarter"
-  }, _react.default.createElement(_Components.Aside, null)), _react.default.createElement("div", {
-    className: "column"
+  }, _react.default.createElement(_Components.Aside, {
+    className: "theme-color"
+  })), _react.default.createElement("div", {
+    className: "column section"
   }, _react.default.createElement(_Components.Main, null))));
 }
 
@@ -71308,7 +71344,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46613" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36035" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

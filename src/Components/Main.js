@@ -14,12 +14,99 @@ function Main() {
     <main>
       <div className='main-wrapper'>
         <FaAlignJustify className='main__hamburger' onClick={openAside} />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iusto
-          dolore ducimus cumque quasi quo blanditiis ipsa odio maxime
-          asperiores, laborum obcaecati animi tempora nesciunt? Sunt illo
-          ratione quae alias!
-        </p>
+        <div className='columns'>
+          <div className='column'>
+            <section className='hero'>
+              <h1 className='hero_title'>
+                Hi, <br /> i'm George!
+              </h1>
+            </section>
+            <article className='article about'>
+              <h1 className='title'>About</h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa
+              ad nemo earum accusantium expedita sequi assumenda! In cupiditate
+              iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto
+              architecto amet suscipit esse itaque est ea minus molestias,
+              temporibus alias? Tempora ab eum provident obcaecati atque.lorem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              dicta esse laborum repellat atque veritatis tempore ipsa quos
+              dolores incidunt culpa ab repellendus tenetur ipsum quas ullam
+              eveniet quibusdam labore!
+            </article>
+            <article className='article about'>
+              <h1 className='title'>Skills</h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa
+              ad nemo earum accusantium expedita sequi assumenda! In cupiditate
+              iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto
+              architecto amet suscipit esse itaque est ea minus molestias,
+              temporibus alias? Tempora ab eum provident obcaecati atque.lorem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              dicta esse laborum repellat atque veritatis tempore ipsa quos
+              dolores incidunt culpa ab repellendus tenetur ipsum quas ullam
+              eveniet quibusdam labore!
+            </article>
+            <article className='article about'>
+              <h1 className='title'>Education</h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa
+              ad nemo earum accusantium expedita sequi assumenda! In cupiditate
+              iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto
+              architecto amet suscipit esse itaque est ea minus molestias,
+              temporibus alias? Tempora ab eum provident obcaecati atque.lorem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              dicta esse laborum repellat atque veritatis tempore ipsa quos
+              dolores incidunt culpa ab repellendus tenetur ipsum quas ullam
+              eveniet quibusdam labore!
+            </article>
+            <article className='article about'>
+              <h1 className='title'>Experience</h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa
+              ad nemo earum accusantium expedita sequi assumenda! In cupiditate
+              iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto
+              architecto amet suscipit esse itaque est ea minus molestias,
+              temporibus alias? Tempora ab eum provident obcaecati atque.lorem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              dicta esse laborum repellat atque veritatis tempore ipsa quos
+              dolores incidunt culpa ab repellendus tenetur ipsum quas ullam
+              eveniet quibusdam labore!
+            </article>
+            <article className='article about'>
+              <h1 className='title'>Work</h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa
+              ad nemo earum accusantium expedita sequi assumenda! In cupiditate
+              iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto
+              architecto amet suscipit esse itaque est ea minus molestias,
+              temporibus alias? Tempora ab eum provident obcaecati atque.lorem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              dicta esse laborum repellat atque veritatis tempore ipsa quos
+              dolores incidunt culpa ab repellendus tenetur ipsum quas ullam
+              eveniet quibusdam labore!
+            </article>
+            <article className='article about'>
+              <h1 className='title'>Blog</h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa
+              ad nemo earum accusantium expedita sequi assumenda! In cupiditate
+              iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto
+              architecto amet suscipit esse itaque est ea minus molestias,
+              temporibus alias? Tempora ab eum provident obcaecati atque.lorem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              dicta esse laborum repellat atque veritatis tempore ipsa quos
+              dolores incidunt culpa ab repellendus tenetur ipsum quas ullam
+              eveniet quibusdam labore!
+            </article>
+          </div>
+        </div>
       </div>
     </main>
   );

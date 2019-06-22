@@ -34,7 +34,7 @@ function Aside() {
             : asideClose()('none');
         }}
       />
-      <aside className='aside'>
+      <aside className='aside theme2-bg'>
         <div className='aside-wrapper'>
           <MdClose className='aside__close' onClick={asideClose} />
           {/*******   img   *******/}
@@ -51,12 +51,12 @@ function Aside() {
           {/*******   img   *******/}
           <div className='columns'>
             <div className='column'>
-              <h4 className='title is-4'>George Matic</h4>
+              <h4 className='title is-4 theme-color'>George Matic</h4>
             </div>
           </div>
           <div className='columns'>
-            <div className='column content'>
-              <h4 className='title is-6'>Javascript Dev</h4>
+            <div className='column'>
+              <h4 className='title is-6 theme-color'>Javascript Dev</h4>
             </div>
           </div>
           <div className='columns'>
@@ -72,7 +72,7 @@ function Aside() {
           </div>
           <div className='columns aside__footer'>
             <div className='column'>
-              <p>©djordjijem ©2019</p>
+              <p className='theme-color'>©djordjijem ©2019</p>
             </div>
           </div>
         </div>

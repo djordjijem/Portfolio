@@ -1,0 +1,36 @@
+.section {
+  margin: -38px -30px 0 -60px;
+}
+@media (max-width: 756px) {
+  .section {
+    margin-top: 0;
+  }
+}
+.theme-bg {
+  background: #8bddd1;
+}
+.theme-color {
+  color: #8bddd1;
+}
+.theme2-bg {
+  background-color: rgb(43, 44, 44);
+}
+.theme2-color {
+  color: rgb(43, 44, 44);
+}
+.article {
+  margin-top: 50px;
+  padding: 30px;
+}
+@media (max-width: 700px) {
+  .article {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1522px) {
+  .article {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+}
