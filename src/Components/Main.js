@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaAlignJustify } from 'react-icons/fa';
-<<<<<<< HEAD
-import { Hero } from './Hero';
-import './main.css';
-=======
 import './Main.css';
 
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
 function Main() {
   const [open, setOpen] = useState(false);
 
@@ -18,12 +13,6 @@ function Main() {
   return (
     <main>
       <div className='main-wrapper'>
-<<<<<<< HEAD
-        <FaAlignJustify className='main__hamburger' onClick={open} />
-        <section>
-          <Hero />
-        </section>
-=======
         <FaAlignJustify className='main__hamburger' onClick={openAside} />
         <div className='columns'>
           <div className='column'>
@@ -118,7 +107,6 @@ function Main() {
             </article>
           </div>
         </div>
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
       </div>
     </main>
   );

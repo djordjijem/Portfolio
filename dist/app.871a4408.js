@@ -25748,7 +25748,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -25780,7 +25780,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -25815,30 +25815,23 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/bulma/css/bulma.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/bulma/css/bulma.css":[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../app.css":[function(require,module,exports) {
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../app.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-<<<<<<< HEAD
 },{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Aside.css":[function(require,module,exports) {
-=======
-},{"_css_loader":"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/Components/Aside.css":[function(require,module,exports) {
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-<<<<<<< HEAD
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Aside.js":[function(require,module,exports) {
-=======
-},{"_css_loader":"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/react-icons/lib/esm/iconsManifest.js":[function(require,module,exports) {
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/react-icons/lib/esm/iconsManifest.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43780,8 +43773,7 @@ exports.MdStarHalf = MdStarHalf;
 MdStarHalf.displayName = "MdStarHalf";
 },{"../lib":"../node_modules/react-icons/lib/esm/index.js"}],"../node_modules/react-window-size-listener/lib/index.js":[function(require,module,exports) {
 module.exports=function(e){function t(o){if(n[o])return n[o].exports;var i=n[o]={i:o,l:!1,exports:{}};return e[o].call(i.exports,i,i.exports,t),i.l=!0,i.exports}var n={};return t.m=e,t.c=n,t.d=function(e,n,o){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:o})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=0)}([function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function r(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function u(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}function c(e){return function(t){function n(e){i(this,n);var t=r(this,(n.__proto__||Object.getPrototypeOf(n)).call(this,e));return t.state={windowSize:{windowWidth:window&&window.innerWidth||document&&(document.documentElement&&document.documentElement.clientWidth||document.body&&document.body.clientWidth)||null,windowHeight:window&&window.innerHeight||document&&(document.documentElement.clientHeight||document.body.clientHeight)||null}},t}return u(n,t),a(n,[{key:"render",value:function(){var t=this;return p.default.createElement(m,{onResize:function(e){return t.setState({windowSize:e})}},p.default.createElement(e,s({},this.props,{windowSize:this.state.windowSize})))}}]),n}(p.default.Component)}Object.defineProperty(t,"__esModule",{value:!0});var s=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o])}return e},a=function(){function e(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,n,o){return n&&e(t.prototype,n),o&&e(t,o),t}}();t.withWindowSizeListener=c;var l=n(1),p=o(l),f=n(2),d=o(f),h=n(5),y=o(h),m=function(e){function t(e){i(this,t);var n=r(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.displayName="WindowSizeListener",n._listeners=[],n.DEBOUNCE_TIME=100,n.onResize=n.onResize.bind(n),n}return u(t,e),a(t,[{key:"shouldComponentUpdate",value:function(e){return e.onResize!==this.props.onResize}},{key:"componentDidMount",value:function(){this._listeners.length||(this._debouncedResize=(0,y.default)(this.onResize,this.DEBOUNCE_TIME),window.addEventListener("resize",this._debouncedResize,!1)),this._listeners.push(this.props.onResize),this._debouncedResize()}},{key:"componentWillUnmount",value:function(){var e=this._listeners.indexOf(this.props.onResize);this._listeners.splice(e,1),this._listeners.length||window.removeEventListener("resize",this._debouncedResize,!1)}},{key:"componentDidUpdate",value:function(e){if(e.onResize!==this.props.onResize){var t=this._listeners.indexOf(e.onResize);this._listeners.splice(t,1,this.props.onResize)}}},{key:"onResize",value:function(){var e=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,t=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;this._listeners.forEach(function(n){n({windowWidth:e,windowHeight:t})})}},{key:"render",value:function(){return this.props.children?this.props.children:null}},{key:"DEBOUNCE_TIME",get:function(){return this._DEBOUNCE_TIME},set:function(e){this._DEBOUNCE_TIME=e}}]),t}(p.default.Component);m.propTypes={onResize:d.default.func.isRequired},t.default=m},function(e,t){e.exports=require("react")},function(e,t,n){e.exports=n(3)()},function(e,t,n){"use strict";function o(){}var i=n(4);e.exports=function(){function e(e,t,n,o,r,u){if(u!==i){var c=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw c.name="Invariant Violation",c}}function t(){return e}e.isRequired=e;var n={array:e,bool:e,func:e,number:e,object:e,string:e,symbol:e,any:e,arrayOf:t,element:e,instanceOf:t,node:e,objectOf:t,oneOf:t,oneOfType:t,shape:t,exact:t};return n.checkPropTypes=o,n.PropTypes=n,n}},function(e,t,n){"use strict";e.exports="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"},function(e,t,n){function o(e,t,n){function o(){w&&clearTimeout(w),d&&clearTimeout(d),b=0,d=w=v=void 0}function r(t,n){n&&clearTimeout(n),d=w=v=void 0,t&&(b=a(),h=e.apply(m,f),w||d||(f=m=void 0))}function s(){var e=t-(a()-y);e<=0||e>t?r(v,d):w=setTimeout(s,e)}function l(){r(E,w)}function p(){if(f=arguments,y=a(),m=this,v=E&&(w||!O),!1===_)var n=O&&!w;else{d||O||(b=y);var o=_-(y-b),i=o<=0||o>_;i?(d&&(d=clearTimeout(d)),b=y,h=e.apply(m,f)):d||(d=setTimeout(l,o))}return i&&w?w=clearTimeout(w):w||t===_||(w=setTimeout(s,t)),n&&(i=!0,h=e.apply(m,f)),!i||w||d||(f=m=void 0),h}var f,d,h,y,m,w,v,b=0,_=!1,E=!0;if("function"!=typeof e)throw new TypeError(u);if(t=t<0?0:+t||0,!0===n){var O=!0;E=!1}else i(n)&&(O=!!n.leading,_="maxWait"in n&&c(+n.maxWait||0,t),E="trailing"in n?!!n.trailing:E);return p.cancel=o,p}function i(e){var t=typeof e;return!!e&&("object"==t||"function"==t)}var r=n(6),u="Expected a function",c=Math.max,s=r(Date,"now"),a=s||function(){return(new Date).getTime()};e.exports=o},function(e,t){function n(e){return!!e&&"object"==typeof e}function o(e,t){var n=null==e?void 0:e[t];return u(n)?n:void 0}function i(e){return r(e)&&f.call(e)==c}function r(e){var t=typeof e;return!!e&&("object"==t||"function"==t)}function u(e){return null!=e&&(i(e)?d.test(l.call(e)):n(e)&&s.test(e))}var c="[object Function]",s=/^\[object .+?Constructor\]$/,a=Object.prototype,l=Function.prototype.toString,p=a.hasOwnProperty,f=a.toString,d=RegExp("^"+l.call(p).replace(/[\\^$.*+?()[\]{}|]/g,"\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,"$1.*?")+"$");e.exports=o}]);
-},{"react":"../node_modules/react/index.js"}],"../src/Components/Aside.js":[function(require,module,exports) {
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
+},{"react":"../node_modules/react/index.js"}],"../src/components/Aside.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43858,184 +43850,11 @@ function Aside() {
     className: "columns aside__footer"
   }, _react.default.createElement("div", {
     className: "column"
-<<<<<<< HEAD
-  }, _react.default.createElement("p", null, "\xA9djordjijem \xA92019"))));
-}
-},{"react":"../node_modules/react/index.js","./Aside.css":"../src/components/Aside.css"}],"../node_modules/react-icons/lib/esm/iconsManifest.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.IconsManifest = void 0;
-const IconsManifest = [{
-  "id": "fa",
-  "name": "Font Awesome",
-  "projectUrl": "https://fontawesome.com/",
-  "license": "CC BY 4.0 License",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
-}, {
-  "id": "io",
-  "name": "Ionicons",
-  "projectUrl": "https://ionicons.com/",
-  "license": "MIT",
-  "licenseUrl": "https://github.com/ionic-team/ionicons/blob/master/LICENSE"
-}, {
-  "id": "md",
-  "name": "Material Design icons",
-  "projectUrl": "http://google.github.io/material-design-icons/",
-  "license": "Apache License Version 2.0",
-  "licenseUrl": "https://github.com/google/material-design-icons/blob/master/LICENSE"
-}, {
-  "id": "ti",
-  "name": "Typicons",
-  "projectUrl": "http://s-ings.com/typicons/",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
-}, {
-  "id": "go",
-  "name": "Github Octicons icons",
-  "projectUrl": "https://octicons.github.com/",
-  "license": "MIT",
-  "licenseUrl": "https://github.com/primer/octicons/blob/master/LICENSE"
-}, {
-  "id": "fi",
-  "name": "Feather",
-  "projectUrl": "https://feathericons.com/",
-  "license": "MIT",
-  "licenseUrl": "https://github.com/feathericons/feather/blob/master/LICENSE"
-}, {
-  "id": "gi",
-  "name": "Game Icons",
-  "projectUrl": "https://game-icons.net/",
-  "license": "CC BY 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
-}, {
-  "id": "wi",
-  "name": "Weather Icons",
-  "projectUrl": "https://erikflowers.github.io/weather-icons/",
-  "license": "SIL OFL 1.1",
-  "licenseUrl": "http://scripts.sil.org/OFL"
-}, {
-  "id": "di",
-  "name": "Devicons",
-  "projectUrl": "https://vorillaz.github.io/devicons/",
-  "license": "MIT",
-  "licenseUrl": "https://opensource.org/licenses/MIT"
-}];
-exports.IconsManifest = IconsManifest;
-},{}],"../node_modules/react-icons/lib/esm/iconContext.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.IconContext = exports.DefaultContext = void 0;
-
-var React = _interopRequireWildcard(require("react"));
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-var DefaultContext = {
-  color: undefined,
-  size: undefined,
-  className: undefined,
-  style: undefined,
-  attr: undefined
-};
-exports.DefaultContext = DefaultContext;
-var IconContext = React.createContext && React.createContext(DefaultContext);
-exports.IconContext = IconContext;
-},{"react":"../node_modules/react/index.js"}],"../node_modules/react-icons/lib/esm/iconBase.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.GenIcon = GenIcon;
-exports.IconBase = IconBase;
-
-var React = _interopRequireWildcard(require("react"));
-
-var _iconContext = require("./iconContext");
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-var __assign = void 0 && (void 0).__assign || function () {
-  __assign = Object.assign || function (t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-      s = arguments[i];
-
-      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-    }
-
-    return t;
-  };
-
-  return __assign.apply(this, arguments);
-};
-
-var __rest = void 0 && (void 0).__rest || function (s, e) {
-  var t = {};
-
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0) t[p[i]] = s[p[i]];
-  return t;
-};
-
-function Tree2Element(tree) {
-  return tree && tree.map(function (node, i) {
-    return React.createElement(node.tag, __assign({
-      key: i
-    }, node.attr), Tree2Element(node.child));
-  });
-}
-
-function GenIcon(data) {
-  return function (props) {
-    return React.createElement(IconBase, __assign({
-      attr: __assign({}, data.attr)
-    }, props), Tree2Element(data.child));
-  };
-}
-
-function IconBase(props) {
-  var elem = function (conf) {
-    var computedSize = props.size || conf.size || "1em";
-    var className;
-    if (conf.className) className = conf.className;
-    if (props.className) className = (className ? className + ' ' : '') + props.className;
-
-    var attr = props.attr,
-        title = props.title,
-        svgProps = __rest(props, ["attr", "title"]);
-
-    return React.createElement("svg", __assign({
-      stroke: "currentColor",
-      fill: "currentColor",
-      strokeWidth: "0"
-    }, conf.attr, attr, svgProps, {
-      className: className,
-      style: __assign({
-        color: props.color || conf.color
-      }, conf.style, props.style),
-      height: computedSize,
-      width: computedSize,
-      xmlns: "http://www.w3.org/2000/svg"
-    }), title && React.createElement("title", null, title), props.children);
-  };
-
-  return _iconContext.IconContext !== undefined ? React.createElement(_iconContext.IconContext.Consumer, null, function (conf) {
-    return elem(conf);
-  }) : elem(_iconContext.DefaultContext);
-=======
   }, _react.default.createElement("p", {
     className: "theme-color"
   }, "\xA9djordjijem \xA92019"))))));
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
 }
-},{"react":"../node_modules/react/index.js","./Aside.css":"../src/Components/Aside.css","react-icons/md":"../node_modules/react-icons/md/index.esm.js","react-window-size-listener":"../node_modules/react-window-size-listener/lib/index.js"}],"../node_modules/react-icons/fa/index.esm.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Aside.css":"../src/components/Aside.css","react-icons/md":"../node_modules/react-icons/md/index.esm.js","react-window-size-listener":"../node_modules/react-window-size-listener/lib/index.js"}],"../node_modules/react-icons/fa/index.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -71366,114 +71185,12 @@ var FaRegWindowRestore = function (props) {
 
 exports.FaRegWindowRestore = FaRegWindowRestore;
 FaRegWindowRestore.displayName = "FaRegWindowRestore";
-<<<<<<< HEAD
-},{"../lib":"../node_modules/react-icons/lib/esm/index.js"}],"../src/components/Carousel.css":[function(require,module,exports) {
-=======
-},{"../lib":"../node_modules/react-icons/lib/esm/index.js"}],"../src/Components/Main.css":[function(require,module,exports) {
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
+},{"../lib":"../node_modules/react-icons/lib/esm/index.js"}],"../src/components/Main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-<<<<<<< HEAD
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/assets/img/bridge.jpg":[function(require,module,exports) {
-module.exports = "/bridge.b18834c6.jpg";
-},{}],"../src/assets/img/startup.jpg":[function(require,module,exports) {
-module.exports = "/startup.0ae69b8e.jpg";
-},{}],"../src/components/Carousel.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Carousel = Carousel;
-
-var _react = _interopRequireWildcard(require("react"));
-
-require("./Carousel.css");
-
-var _bridge = _interopRequireDefault(require("../assets/img/bridge.jpg"));
-
-var _startup = _interopRequireDefault(require("../assets/img/startup.jpg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function Carousel() {
-  var _useState = (0, _react.useState)(0),
-      _useState2 = _slicedToArray(_useState, 2),
-      slideIndex = _useState2[0],
-      setSlideIndex = _useState2[1];
-
-  useInterval(showSlides, 2000);
-
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName('carousel_slides');
-
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
-    }
-
-    setSlideIndex(function () {
-      return slideIndex + 1;
-    });
-    slideIndex === 2 && setSlideIndex(0);
-    slides[slideIndex].style.display = 'block';
-    console.log(slideIndex);
-  }
-
-  return _react.default.createElement("div", {
-    className: "carousel-container"
-  }, _react.default.createElement("div", {
-    className: "carousel_slides carousel_fade"
-  }, _react.default.createElement("img", {
-    src: _bridge.default
-  })), _react.default.createElement("div", {
-    className: "carousel_slides carousel_slides-two carousel_fade"
-  }, _react.default.createElement("img", {
-    src: _startup.default
-  })));
-}
-
-function useInterval(callback, delay) {
-  var savedCallback = (0, _react.useRef)(); // Remember the latest callback.
-
-  (0, _react.useEffect)(function () {
-    savedCallback.current = callback;
-  }, [callback]); // Set up the interval.
-
-  (0, _react.useEffect)(function () {
-    function tick() {
-      savedCallback.current();
-    }
-
-    if (delay !== null) {
-      var id = setInterval(tick, delay);
-      return function () {
-        return clearInterval(id);
-      };
-    }
-  }, [delay]);
-}
-},{"react":"../node_modules/react/index.js","./Carousel.css":"../src/components/Carousel.css","../assets/img/bridge.jpg":"../src/assets/img/bridge.jpg","../assets/img/startup.jpg":"../src/assets/img/startup.jpg"}],"../src/components/main.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Main.js":[function(require,module,exports) {
-=======
-},{"./../assets/img/despaired-2261021_1280.jpg":[["despaired-2261021_1280.77fae219.jpg","../src/assets/img/despaired-2261021_1280.jpg"],"../src/assets/img/despaired-2261021_1280.jpg"],"_css_loader":"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/Components/Main.js":[function(require,module,exports) {
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
+},{"./..\\assets\\img\\despaired-2261021_1280.jpg":[["despaired-2261021_1280.77fae219.jpg","../src/assets/img/despaired-2261021_1280.jpg"],"../src/assets/img/despaired-2261021_1280.jpg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -71485,13 +71202,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _fa = require("react-icons/fa");
 
-<<<<<<< HEAD
-var _Carousel = require("./Carousel");
-
-require("./main.css");
-=======
 require("./Main.css");
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
@@ -71518,12 +71229,6 @@ function Main() {
     className: "main-wrapper"
   }, _react.default.createElement(_fa.FaAlignJustify, {
     className: "main__hamburger",
-<<<<<<< HEAD
-    onClick: open
-  }), _react.default.createElement("section", null, _react.default.createElement(_Carousel.Carousel, null))));
-}
-},{"react":"../node_modules/react/index.js","react-icons/fa":"../node_modules/react-icons/fa/index.esm.js","./Carousel":"../src/components/Carousel.js","./main.css":"../src/components/main.css"}],"../src/components/index.js":[function(require,module,exports) {
-=======
     onClick: openAside
   }), _react.default.createElement("div", {
     className: "columns"
@@ -71559,8 +71264,7 @@ function Main() {
     className: "title"
   }, "Blog"), "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex, reiciendis deserunt quae rerum aliquid aut culpa ad nemo earum accusantium expedita sequi assumenda! In cupiditate iste necessitatibus voluptatibus sit?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sequi dolorum nam iusto architecto amet suscipit esse itaque est ea minus molestias, temporibus alias? Tempora ab eum provident obcaecati atque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dicta esse laborum repellat atque veritatis tempore ipsa quos dolores incidunt culpa ab repellendus tenetur ipsum quas ullam eveniet quibusdam labore!")))));
 }
-},{"react":"../node_modules/react/index.js","react-icons/fa":"../node_modules/react-icons/fa/index.esm.js","./Main.css":"../src/Components/Main.css"}],"../src/Components/index.js":[function(require,module,exports) {
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
+},{"react":"../node_modules/react/index.js","react-icons/fa":"../node_modules/react-icons/fa/index.esm.js","./Main.css":"../src/components/Main.css"}],"../src/components/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -71604,25 +71308,15 @@ function App() {
     className: "columns"
   }, _react.default.createElement("div", {
     className: "column is-one-quarter"
-<<<<<<< HEAD
-  }, _react.default.createElement(_components.Aside, null)), _react.default.createElement("div", {
-    className: "column"
+  }, _react.default.createElement(_components.Aside, {
+    className: "theme-color"
+  })), _react.default.createElement("div", {
+    className: "column section"
   }, _react.default.createElement(_components.Main, null))));
 }
 
 _reactDom.default.render(_react.default.createElement(App, null), document.getElementById('root'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","bulma/css/bulma.css":"../node_modules/bulma/css/bulma.css","./app.css":"../app.css","./src/components":"../src/components/index.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-=======
-  }, _react.default.createElement(_Components.Aside, {
-    className: "theme-color"
-  })), _react.default.createElement("div", {
-    className: "column section"
-  }, _react.default.createElement(_Components.Main, null))));
-}
-
-_reactDom.default.render(_react.default.createElement(App, null), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","bulma/css/bulma.css":"../node_modules/bulma/css/bulma.css","./app.css":"../app.css","./src/Components":"../src/Components/index.js"}],"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -71650,11 +71344,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63172" + '/');
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36035" + '/');
->>>>>>> a96475e93385a557f70afb3e9e763f0c8f914adc
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51141" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -71829,5 +71519,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../app.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../app.js"], null)
 //# sourceMappingURL=/app.871a4408.js.map
