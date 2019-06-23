@@ -22,5 +22,6 @@
 @media (max-width: 741px) {
   .aside {
     display: none;
+    transition: margin-left 0.5s;
   }
 }

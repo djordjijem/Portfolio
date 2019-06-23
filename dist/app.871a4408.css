@@ -10625,6 +10625,38 @@ label.panel-block:hover {
 @media (max-width: 741px) {
   .aside {
     display: none;
+    transition: margin-left 0.5s;
+  }
+}
+
+.carousel-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Fading animation */
+.carousel_fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
 

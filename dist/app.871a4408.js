@@ -25826,12 +25826,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/Components/Aside.css":[function(require,module,exports) {
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Aside.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/Components/Aside.js":[function(require,module,exports) {
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Aside.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25887,7 +25887,7 @@ function Aside() {
     className: "column"
   }, _react.default.createElement("p", null, "\xA9djordjijem \xA92019"))));
 }
-},{"react":"../node_modules/react/index.js","./Aside.css":"../src/Components/Aside.css"}],"../node_modules/react-icons/lib/esm/iconsManifest.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Aside.css":"../src/components/Aside.css"}],"../node_modules/react-icons/lib/esm/iconsManifest.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53429,12 +53429,106 @@ var FaRegWindowRestore = function (props) {
 
 exports.FaRegWindowRestore = FaRegWindowRestore;
 FaRegWindowRestore.displayName = "FaRegWindowRestore";
-},{"../lib":"../node_modules/react-icons/lib/esm/index.js"}],"../src/Components/main.css":[function(require,module,exports) {
+},{"../lib":"../node_modules/react-icons/lib/esm/index.js"}],"../src/components/Carousel.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/Components/Main.js":[function(require,module,exports) {
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/assets/img/bridge.jpg":[function(require,module,exports) {
+module.exports = "/bridge.b18834c6.jpg";
+},{}],"../src/assets/img/startup.jpg":[function(require,module,exports) {
+module.exports = "/startup.0ae69b8e.jpg";
+},{}],"../src/components/Carousel.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Carousel = Carousel;
+
+var _react = _interopRequireWildcard(require("react"));
+
+require("./Carousel.css");
+
+var _bridge = _interopRequireDefault(require("../assets/img/bridge.jpg"));
+
+var _startup = _interopRequireDefault(require("../assets/img/startup.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function Carousel() {
+  var _useState = (0, _react.useState)(0),
+      _useState2 = _slicedToArray(_useState, 2),
+      slideIndex = _useState2[0],
+      setSlideIndex = _useState2[1];
+
+  useInterval(showSlides, 2000);
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName('carousel_slides');
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+
+    setSlideIndex(function () {
+      return slideIndex + 1;
+    });
+    slideIndex === 2 && setSlideIndex(0);
+    slides[slideIndex].style.display = 'block';
+    console.log(slideIndex);
+  }
+
+  return _react.default.createElement("div", {
+    className: "carousel-container"
+  }, _react.default.createElement("div", {
+    className: "carousel_slides carousel_fade"
+  }, _react.default.createElement("img", {
+    src: _bridge.default
+  })), _react.default.createElement("div", {
+    className: "carousel_slides carousel_slides-two carousel_fade"
+  }, _react.default.createElement("img", {
+    src: _startup.default
+  })));
+}
+
+function useInterval(callback, delay) {
+  var savedCallback = (0, _react.useRef)(); // Remember the latest callback.
+
+  (0, _react.useEffect)(function () {
+    savedCallback.current = callback;
+  }, [callback]); // Set up the interval.
+
+  (0, _react.useEffect)(function () {
+    function tick() {
+      savedCallback.current();
+    }
+
+    if (delay !== null) {
+      var id = setInterval(tick, delay);
+      return function () {
+        return clearInterval(id);
+      };
+    }
+  }, [delay]);
+}
+},{"react":"../node_modules/react/index.js","./Carousel.css":"../src/components/Carousel.css","../assets/img/bridge.jpg":"../src/assets/img/bridge.jpg","../assets/img/startup.jpg":"../src/assets/img/startup.jpg"}],"../src/components/main.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../src/components/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53445,6 +53539,8 @@ exports.Main = Main;
 var _react = _interopRequireDefault(require("react"));
 
 var _fa = require("react-icons/fa");
+
+var _Carousel = require("./Carousel");
 
 require("./main.css");
 
@@ -53460,9 +53556,9 @@ function Main() {
   }, _react.default.createElement(_fa.FaAlignJustify, {
     className: "main__hamburger",
     onClick: open
-  }), _react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iusto dolore ducimus cumque quasi quo blanditiis ipsa odio maxime asperiores, laborum obcaecati animi tempora nesciunt? Sunt illo ratione quae alias!")));
+  }), _react.default.createElement("section", null, _react.default.createElement(_Carousel.Carousel, null))));
 }
-},{"react":"../node_modules/react/index.js","react-icons/fa":"../node_modules/react-icons/fa/index.esm.js","./main.css":"../src/Components/main.css"}],"../src/Components/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-icons/fa":"../node_modules/react-icons/fa/index.esm.js","./Carousel":"../src/components/Carousel.js","./main.css":"../src/components/main.css"}],"../src/components/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53484,7 +53580,7 @@ Object.defineProperty(exports, "Main", {
 var _Aside = require("./Aside");
 
 var _Main = require("./Main");
-},{"./Aside":"../src/Components/Aside.js","./Main":"../src/Components/Main.js"}],"../app.js":[function(require,module,exports) {
+},{"./Aside":"../src/components/Aside.js","./Main":"../src/components/Main.js"}],"../app.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -53495,7 +53591,7 @@ require("bulma/css/bulma.css");
 
 require("./app.css");
 
-var _Components = require("./src/Components");
+var _components = require("./src/components");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -53506,13 +53602,13 @@ function App() {
     className: "columns"
   }, _react.default.createElement("div", {
     className: "column is-one-quarter"
-  }, _react.default.createElement(_Components.Aside, null)), _react.default.createElement("div", {
+  }, _react.default.createElement(_components.Aside, null)), _react.default.createElement("div", {
     className: "column"
-  }, _react.default.createElement(_Components.Main, null))));
+  }, _react.default.createElement(_components.Main, null))));
 }
 
 _reactDom.default.render(_react.default.createElement(App, null), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","bulma/css/bulma.css":"../node_modules/bulma/css/bulma.css","./app.css":"../app.css","./src/Components":"../src/Components/index.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","bulma/css/bulma.css":"../node_modules/bulma/css/bulma.css","./app.css":"../app.css","./src/components":"../src/components/index.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -53540,7 +53636,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58346" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63172" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
