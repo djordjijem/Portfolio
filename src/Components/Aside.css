@@ -4,10 +4,25 @@
   width: 300px;
   position: fixed;
   z-index: 1;
-  background-color: #111;
   overflow-x: hidden;
   text-align: center;
   transition: 0.5s;
+}
+.aside-wrapper {
+  position: relative;
+}
+.aside__close {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  color: white;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+@media (min-width: 756px) {
+  .aside__close {
+    display: none;
+  }
 }
 .aside__img {
   margin: 70px auto;
@@ -19,7 +34,7 @@
 .aside__footer {
   margin-top: 30px;
 }
-@media (max-width: 741px) {
+@media (max-width: 756px) {
   .aside {
     display: none;
     transition: margin-left 0.5s;

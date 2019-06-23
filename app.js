@@ -9,9 +9,9 @@ function App() {
     <div className='container'>
       <div className='columns'>
         <div className='column is-one-quarter'>
-          <Aside />
+          <Aside className='theme-color' />
         </div>
-        <div className='column'>
+        <div className='column section'>
           <Main />
         </div>
       </div>

@@ -10597,8 +10597,41 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
-.main {
-  width: 70%;
+.section {
+  margin: -38px -30px 0 -60px;
+}
+@media (max-width: 756px) {
+  .section {
+    margin-top: 0;
+  }
+}
+.theme-bg {
+  background: #8bddd1;
+}
+.theme-color {
+  color: #8bddd1;
+}
+.theme2-bg {
+  background-color: rgb(43, 44, 44);
+}
+.theme2-color {
+  color: rgb(43, 44, 44);
+}
+.article {
+  margin-top: 50px;
+  padding: 30px;
+}
+@media (max-width: 700px) {
+  .article {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1522px) {
+  .article {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
 }
 
 .aside {
@@ -10607,10 +10640,25 @@ label.panel-block:hover {
   width: 300px;
   position: fixed;
   z-index: 1;
-  background-color: #111;
   overflow-x: hidden;
   text-align: center;
   transition: 0.5s;
+}
+.aside-wrapper {
+  position: relative;
+}
+.aside__close {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  color: white;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+@media (min-width: 756px) {
+  .aside__close {
+    display: none;
+  }
 }
 .aside__img {
   margin: 70px auto;
@@ -10622,7 +10670,7 @@ label.panel-block:hover {
 .aside__footer {
   margin-top: 30px;
 }
-@media (max-width: 741px) {
+@media (max-width: 756px) {
   .aside {
     display: none;
     transition: margin-left 0.5s;
@@ -10660,26 +10708,40 @@ label.panel-block:hover {
   }
 }
 
-@media (max-width: 741px) {
-  .main-wrapper {
-    transition: margin-left 0.5s;
+.main__hamburger {
+  font-size: 1.5em;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  cursor: pointer;
+}
+@media (min-width: 757px) {
+  .main__hamburger {
+    display: none;
   }
 }
-
-@media (min-width: 812px) and (max-width: 860px) {
-  .main-wrapper {
-    margin-left: 80px;
-  }
-}
-@media (min-width: 861px) and (max-width: 992px) {
+@media (min-width: 758px) and (max-width: 992px) {
   .main-wrapper {
     margin-left: 90px;
   }
 }
-@media (min-width: 1000px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1250px) {
   .main-wrapper {
     margin-left: 60px;
   }
+}
+.hero {
+  background-image: url('/despaired-2261021_1280.77fae219.jpg');
+  background-repeat: no-repeat, repeat;
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.hero_title {
+  margin: auto;
+  color: rgb(8, 8, 8);
 }
 
 
